@@ -5,12 +5,13 @@ import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-@Entity
+@Entity  //jpa实体
 public class Reader implements UserDetails {
 
   private static final long serialVersionUID = 1L;

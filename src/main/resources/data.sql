@@ -1,0 +1,2 @@
+insert into Reader (username, password, fullname) values ('craig', '$2a$10$PMnzNRlXbLhMWPlyboM5mO5iBczyR2AKOibvJb24uTb0wSE6P9UmK', 'Craig Walls');
+insert into Reader (username, password, fullname) values ('walt', '$2a$10$PMnzNRlXbLhMWPlyboM5mO5iBczyR2AKOibvJb24uTb0wSE6P9UmK', 'Walt Disney');
