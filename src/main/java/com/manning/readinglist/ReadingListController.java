@@ -44,12 +44,13 @@ public class ReadingListController {
 		}
 		return "readingList";
 	}
-	
+
+
 	@RequestMapping(method=RequestMethod.POST)
-	public String addToReadingList(String username, Book book) {
-		book.setReader(username);
+	public String addToReadingList(Reader reader, Book book) {
+		book.setReader(reader.getUsername());
 		readingListRepository.save(book);
-		return "redirect:/?username=" + username;
+		return "redirect:/?username=" + reader.getUsername();
 	}
 	
 }

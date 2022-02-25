@@ -1,6 +1,14 @@
 spring:
   profiles:
-    active: production
+    active: development
+  jpa:
+    defer-datasource-initialization: true
+  thymeleaf:
+    cache: false
+
+amazon:
+  associate_id: habuma-20
+
 logging:
   level:
     root: INFO

@@ -2,10 +2,10 @@ package com.manning.readinglist;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,7 +20,8 @@ public class Reader implements UserDetails {
   private String username;
   private String fullname;
   private String password;
-  
+
+
   public String getUsername() {
     return username;
   }
