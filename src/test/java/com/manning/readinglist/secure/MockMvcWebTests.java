@@ -40,14 +40,12 @@ public class MockMvcWebTests {
         .apply(springSecurity())
         .build();
   }
-
 //  @Test
   public void homePage_unauthenticatedUser() throws Exception {
     mockMvc.perform(get("/?username=liyang"))
         .andExpect(status().is3xxRedirection())
         .andExpect(header().string("Location", "http://localhost/login"));
   }
-  
   @Test
   @WithUserDetails("walt")
 //  @WithMockUser(username="walt", password="123456", roles="READER")//绕过对UserDetails查询，直接创建
