@@ -1,0 +1,14 @@
+#!/bin/bash
+# find the exe file in PATH dir
+IFS=:
+for folder in $PATH
+do
+  echo "$folder:"
+  for file in $folder/*
+  do
+    if [ -x $file ]
+    then
+      echo " $file"
+    fi
+  done
+done

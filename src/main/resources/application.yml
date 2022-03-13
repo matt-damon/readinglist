@@ -1,6 +1,12 @@
 spring:
-  profiles:
-    active: development
+  application:
+    name: readinglist
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:9091
+#  profiles:
+#    active: development
   jpa:
     defer-datasource-initialization: true
   thymeleaf:
@@ -12,6 +18,24 @@ amazon:
 logging:
   level:
     root: INFO
+#暴露actuator端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always # health的详细信息
+
+info:
+  app:
+    name: readlist
+  contact:
+    email: support@tacocloud.com
+    phone: 822-625-6831
+
+
 ---
 spring:
   config:

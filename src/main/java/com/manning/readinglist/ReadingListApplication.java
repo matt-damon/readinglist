@@ -2,7 +2,10 @@ package com.manning.readinglist;
 
 import java.util.List;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.trace.http.HttpTraceRepository;
+import org.springframework.boot.actuate.trace.http.InMemoryHttpTraceRepository;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -24,5 +27,11 @@ public class ReadingListApplication implements WebMvcConfigurer {
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
       //argumentResolvers.add(new ReaderHandlerMethodArgumentResolver());
     }
-    
+
+    //开启actuator/httptrace
+    @Bean
+    public HttpTraceRepository htttpTraceRepository()
+    {
+        return new InMemoryHttpTraceRepository();
+    }
 }
