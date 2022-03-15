@@ -1,0 +1,39 @@
+#!/bin/bash
+# test command line options
+
+#while [ -n "$1" ] # 双引号
+#do
+#  case "$1" in
+#    -a) echo "Found the -a option" ;;
+#    -b) param="$2"
+#        echo "Found the -b option, with param value $param"
+#        shift ;;
+#    -c) echo "Found the -c option" ;;
+#    --) shift
+#        break ;;
+#     *) echo "$1 is not an option" ;;
+#  esac
+#  shift
+#done
+
+# process options & parameters with getopts
+# ./cmd_opt_test -a -b test1 -c test2 -d test3 test4 test5
+echo $OPTIND
+while getopts :ab:c:d opt
+do
+  case "$opt" in
+  a) echo "Found the -a option" ;;
+  b) echo "Found the -b option, with value $OPTARG" ;;
+  c) echo "Found the -c option, with value $OPTARG" ;;
+  *) echo "Unknown option: $opt"  ;;
+  esac
+done
+echo $OPTIND
+shift $[ $OPTIND -1 ]
+echo
+count=1
+for param in "$@"
+do
+  echo "Parameter #$count: $param"
+  count=$[ $count + 1 ]
+done

@@ -1,0 +1,38 @@
+#!/bin/bash
+# testing $# and ${!#}
+echo total parameters:$#
+#if [ $# -ne 2 ]
+#then
+#  echo
+#  echo Usage: param_test.sh a b
+#  echo
+#else
+#  total=$[ $1 + $2 ]
+#  echo
+#  echo The last param is ${!#}
+#  echo The total is $total
+#  echo
+#fi
+# testing $*(单个) and $@(多个)
+#count=1
+#for param in "$*"
+#do
+#  echo "\$* Parameter #$count = $param"
+#  count=$[$count + 1]
+#done
+#echo
+#count=1
+#for param in "$@"
+#do
+#  echo  "\$@ Parameter #$count = $param"
+#  count=$[$count + 1]
+#done
+# testing shift 移动变量，默认向左移动一个
+echo
+count=1
+while [ -n "$1" ]
+do
+  echo "param #$count = $1"
+  count=$[$count + 1]
+  shift
+done

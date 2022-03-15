@@ -1,0 +1,60 @@
+#!/bin/bash
+# 脚本中输出重定向 ./redirect_test 2> testout
+#echo "This is a error" >&2
+#echo "This is a normal output"
+#
+## 永久重定向  exec 3>test3out 也可重定向其他文件描述符，一个shell最多可有9个打开的文件描述符
+#exec 1>>testout
+#echo "hello"
+#echo "world"
+
+## 重定向输入
+#exec 0< testfile
+#count=1
+#while read line
+#do
+#  echo "Line #$count: $line"
+#  count=$[ $count + 1 ]
+#done
+#
+##重定向输出文件描述符
+#exec 3>&1  #将3重定向到1的当前位置(显示器)
+#exec 1>testout  #将STDOUT重定向到文件
+#echo "this should store in the output file"
+#exec 1>&3  #重定向STDOUT到原来的位置(显示器)
+#echo "now things should be back to normal"
+
+##重定向输入文件描述符
+#exec 6<&0 #6用来保存STDIN的位置，键盘
+#exec 0< testfile  #STDIN重定向到文件
+#count=1
+#while read line #从重定向后的STDIIN（文件）读
+#do
+#  echo "Line #$count: $line"
+#  count=$[ $count + 1 ]
+#done
+#exec 0<&6 #恢复STDIN到原先位置
+#read -p "Are you done now?" answer
+#case $answer in
+#Y|y) echo "Goodbye";;
+#N|n) echo "Sorry, this is the end.";;
+#esac
+
+## 关闭文件描述符
+#exec 3> testout
+#echo "1 test line" >&3
+#exec 3>&-
+##echo "won't work" >&3
+#
+#exec 3> testout
+#echo "2 test line" >&3
+
+# 利用cat<<EOF添加多行本文 ./redirect_test users.csv
+outfile='members.sql'
+IFS=','
+while read id name
+do
+  cat >> $outfile << EOF   # 也可写成cat << EOF >> $outfile
+  INSERT INTO members (id, name) values ('$id', '$name');
+EOF
+done < ${1}
