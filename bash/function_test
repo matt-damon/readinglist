@@ -1,0 +1,53 @@
+#!/bin/bash
+# 使用return退出函数并返回特定的退出状态码
+# 限制 1.$?变量只能返回执行的最后一条命令的退出状态码；2.只能返回0~255之间的数值，否则产生错误值
+#function dbl {
+#  read -p "Enter a value: " value
+#  echo "doubling the value"
+#  return $[ $value *2 ]
+#}
+#dbl
+#echo "The new value is $?"
+
+# 函数输出
+#function dbl {
+#  read -p "Enter a value: " value  #此处不会被输出STDOUT
+#  echo $[ $value *2 ]
+#}
+#result=$(dbl)
+#echo "The new value is $result"
+
+# 函数参数
+#function addem {
+#  echo $[ $1 + $2 ]
+#}
+#echo $(addem 3 4) #给函数传递参数
+
+# 给函数传递数组变量
+#function testit {
+#  local newarray
+#  newarray=($(echo "$@"))
+#  echo "new array is ${newarray[*]}"
+#}
+#myarray=(1 2 3 4 5)
+#echo "original array is ${myarray[*]}"
+#testit ${myarray[*]}
+
+# 从函数返回数组
+function arraydblr() {
+    local origarray
+    local newarray
+    local elements
+    local i
+    origarray=($(echo "$@"))
+    newarray=($(echo "$@"))
+    elements=$[ $# - 1 ] #参数个数
+    for (( i = 0; i <= $elements; i++ ))
+    {
+      newarray[$i]=$[ ${origarray[$i]} * 2 ]
+    }
+    echo ${newarray[*]}
+}
+myarray=(1 2 3 4 5)
+result=($(arraydblr ${myarray[*]}))
+echo "new array is: ${result[*]}"
