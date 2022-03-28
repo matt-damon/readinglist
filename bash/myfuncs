@@ -1,0 +1,4 @@
+#!/bin/bash
+function multem {
+    echo $[ $1 * $2 ]
+}

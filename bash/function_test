@@ -34,20 +34,41 @@
 #testit ${myarray[*]}
 
 # 从函数返回数组
-function arraydblr() {
-    local origarray
-    local newarray
-    local elements
-    local i
-    origarray=($(echo "$@"))
-    newarray=($(echo "$@"))
-    elements=$[ $# - 1 ] #参数个数
-    for (( i = 0; i <= $elements; i++ ))
-    {
-      newarray[$i]=$[ ${origarray[$i]} * 2 ]
-    }
-    echo ${newarray[*]}
-}
-myarray=(1 2 3 4 5)
-result=($(arraydblr ${myarray[*]}))
-echo "new array is: ${result[*]}"
+#function arraydblr() {
+#    local origarray
+#    local newarray
+#    local elements
+#    local i
+#    origarray=($(echo "$@"))
+#    newarray=($(echo "$@"))
+#    elements=$[ $# - 1 ] #参数个数
+#    for (( i = 0; i <= $elements; i++ ))
+#    {
+#      newarray[$i]=$[ ${origarray[$i]} * 2 ]
+#    }
+#    echo ${newarray[*]}
+#}
+#myarray=(1 2 3 4 5)
+#result=($(arraydblr ${myarray[*]}))
+#echo "new array is: ${result[*]}"
+
+# 递归函数
+#function factorial {
+#  if [ $1 -eq 1 ]
+#  then
+#    echo 1
+#  else
+#    local temp=$[ $1 - 1 ]
+#    local result=$(factorial $temp)
+#    echo $[ $result * $1 ]
+#  fi
+#}
+#read -p "enter value:" value
+#result=$(factorial $value)
+#echo "result is: $result"
+
+. ./myfuncs  # 点操作符(source命令),在当前shell上下文中执行命令，不创建新shell
+result=$(multem 2 3)
+echo $result
+
+# shtool
