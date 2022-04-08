@@ -5,11 +5,11 @@ RUN apk add --no-cache bash procps nano make gawk wget \
     && tar -xzf apache-zookeeper-3.7.0-bin.tar.gz -C opt \
     && mv opt/apache-zookeeper-3.7.0-bin opt/zookeeper \
     && mv opt/zookeeper/conf/zoo_sample.cfg opt/zookeeper/conf/zoo.cfg
-EXPOSE 8081 2181 2888 3888
+EXPOSE 8081 2181 2182 2183 2184
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
 COPY bash/ /mybash
-#ENTRYPOINT ["java",\
-#            "-jar",\
-#            "/app.jar"]D
+#ENTRYPOINT ["java","-jar","/app.jar"]
+
+# wget -q https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz
