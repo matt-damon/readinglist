@@ -1,6 +1,7 @@
 package com.manning.readinglist;
 
 import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.trace.http.HttpTraceRepository;
 import org.springframework.boot.actuate.trace.http.InMemoryHttpTraceRepository;
@@ -17,21 +18,20 @@ public class ReadingListApplication implements WebMvcConfigurer {
     public static void main(String[] args) {
         SpringApplication.run(ReadingListApplication.class, args);
     }
-    
+
     @Override  //实现无业务逻辑跳转，从而减少控制器代码的编写
     public void addViewControllers(ViewControllerRegistry registry) {
-      registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/login").setViewName("login");
     }
-    
+
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-      //argumentResolvers.add(new ReaderHandlerMethodArgumentResolver());
+        //argumentResolvers.add(new ReaderHandlerMethodArgumentResolver());
     }
 
     //开启actuator/httptrace
     @Bean
-    public HttpTraceRepository htttpTraceRepository()
-    {
+    public HttpTraceRepository htttpTraceRepository() {
         return new InMemoryHttpTraceRepository();
     }
 }

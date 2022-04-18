@@ -1,0 +1,819 @@
+2022-02-24 16:29:09.785  INFO 92735 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92735 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:29:09.791  INFO 92735 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:29:10.443  INFO 92735 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:29:10.497  INFO 92735 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:29:10.949  INFO 92735 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:29:11.098  INFO 92735 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:29:11.195  INFO 92735 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:29:11.239  INFO 92735 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:29:11.399  INFO 92735 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:29:11.511  INFO 92735 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:29:11.948  INFO 92735 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:29:11.954  INFO 92735 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:29:12.335  WARN 92735 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:29:12.557  INFO 92735 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7eae55, org.springframework.security.web.context.SecurityContextPersistenceFilter@697a92af, org.springframework.security.web.header.HeaderWriterFilter@606d6d2c, org.springframework.security.web.csrf.CsrfFilter@25fd6d1e, org.springframework.security.web.authentication.logout.LogoutFilter@57bdceaa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ae3c140, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16b76858, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f6b57f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d84e363, org.springframework.security.web.session.SessionManagementFilter@56d822dc, org.springframework.security.web.access.ExceptionTranslationFilter@e3ed455, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79d4ff58]
+2022-02-24 16:29:13.262  INFO 92735 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.035 seconds (JVM running for 4.735)
+2022-02-24 16:29:13.343  INFO 92735 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 16:29:13.343  INFO 92735 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 16:29:13.345  INFO 92735 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2022-02-24 16:29:13.394  INFO 92735 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:29:13.395  INFO 92735 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:29:13.401  INFO 92735 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:29:13.403  INFO 92735 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:29:46.142  INFO 92747 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92747 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:29:46.143  INFO 92747 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:29:46.768  INFO 92747 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:29:46.817  INFO 92747 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:29:47.393  INFO 92747 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:29:47.627  INFO 92747 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:29:47.687  INFO 92747 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:29:47.733  INFO 92747 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:29:47.906  INFO 92747 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:29:48.024  INFO 92747 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:29:48.666  INFO 92747 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:29:48.674  INFO 92747 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:29:49.108  WARN 92747 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:29:52.738  INFO 92747 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a85dc58, org.springframework.security.web.context.SecurityContextPersistenceFilter@10b2c1cf, org.springframework.security.web.header.HeaderWriterFilter@5c1687d1, org.springframework.security.web.csrf.CsrfFilter@35d3202b, org.springframework.security.web.authentication.logout.LogoutFilter@41cf4272, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@460aa24e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@488279d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@550574cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ee1b017, org.springframework.security.web.session.SessionManagementFilter@19de32cb, org.springframework.security.web.access.ExceptionTranslationFilter@104392ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18a38bba]
+2022-02-24 16:29:53.693  INFO 92747 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 8.028 seconds (JVM running for 9.074)
+2022-02-24 16:29:53.778  INFO 92747 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 16:29:53.779  INFO 92747 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 16:29:53.780  INFO 92747 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 16:30:34.490  INFO 92747 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:30:34.491  INFO 92747 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:30:34.496  INFO 92747 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:30:34.498  INFO 92747 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:30:56.675  INFO 92760 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92760 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:30:56.676  INFO 92760 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:30:57.338  INFO 92760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:30:57.391  INFO 92760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:30:57.938  INFO 92760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:30:58.118  INFO 92760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:30:58.216  INFO 92760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:30:58.265  INFO 92760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:30:58.427  INFO 92760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:30:58.560  INFO 92760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:30:59.094  INFO 92760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:30:59.103  INFO 92760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:30:59.515  WARN 92760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:30:59.746  INFO 92760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd3d39d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7956f93a, org.springframework.security.web.header.HeaderWriterFilter@65e620b0, org.springframework.security.web.csrf.CsrfFilter@3c09a350, org.springframework.security.web.authentication.logout.LogoutFilter@5e51ec2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14485747, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27bb74e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ab8589a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ae3c140, org.springframework.security.web.session.SessionManagementFilter@74707df8, org.springframework.security.web.access.ExceptionTranslationFilter@43786627, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41d20f06]
+2022-02-24 16:31:00.465  INFO 92760 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.514 seconds (JVM running for 5.425)
+2022-02-24 16:31:00.547  INFO 92760 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 16:31:00.548  INFO 92760 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 16:31:00.549  INFO 92760 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 16:31:00.605  INFO 92760 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:31:00.606  INFO 92760 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:31:00.614  INFO 92760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:31:00.616  INFO 92760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:37:39.553  INFO 92818 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92818 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:37:39.554  INFO 92818 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:37:40.309  INFO 92818 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:37:40.370  INFO 92818 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:37:40.960  INFO 92818 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:37:41.166  INFO 92818 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:37:41.295  INFO 92818 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:37:41.334  INFO 92818 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:37:41.501  INFO 92818 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:37:41.620  INFO 92818 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:37:42.246  INFO 92818 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:37:42.254  INFO 92818 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:37:42.662  WARN 92818 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:37:42.966  INFO 92818 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2086d469, org.springframework.security.web.context.SecurityContextPersistenceFilter@48368a08, org.springframework.security.web.header.HeaderWriterFilter@5c573229, org.springframework.security.web.csrf.CsrfFilter@78545d40, org.springframework.security.web.authentication.logout.LogoutFilter@270f28cf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6be766d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c01c37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25fd6d1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b1d19ff, org.springframework.security.web.session.SessionManagementFilter@714f1a44, org.springframework.security.web.access.ExceptionTranslationFilter@520a95ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b126187]
+2022-02-24 16:37:43.671  INFO 92818 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.646 seconds (JVM running for 5.35)
+2022-02-24 16:37:43.695  INFO 92818 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 83a78ac2-09af-4b25-ba01-c0e358722034
+
+2022-02-24 16:37:43.703  WARN 92818 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@78691363] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@58f50dd0]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 16:37:43.755  INFO 92818 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:37:43.756  INFO 92818 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:37:43.760  INFO 92818 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:37:43.762  INFO 92818 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:41:06.866  INFO 92854 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92854 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:41:06.867  INFO 92854 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:41:07.538  INFO 92854 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:41:07.588  INFO 92854 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:41:08.155  INFO 92854 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:41:08.397  INFO 92854 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:41:08.450  INFO 92854 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:41:08.496  INFO 92854 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:41:08.656  INFO 92854 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:41:08.794  INFO 92854 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:41:09.488  INFO 92854 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:41:09.498  INFO 92854 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:41:10.031  WARN 92854 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:41:13.805  INFO 92854 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@276aa33f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cdad619, org.springframework.security.web.header.HeaderWriterFilter@581d5b33, org.springframework.security.web.csrf.CsrfFilter@5bf1b528, org.springframework.security.web.authentication.logout.LogoutFilter@5b324447, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5008559a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3909308c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6958d5d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34065642, org.springframework.security.web.session.SessionManagementFilter@44a9971f, org.springframework.security.web.access.ExceptionTranslationFilter@6a562255, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f264bf]
+2022-02-24 16:41:14.754  INFO 92854 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 8.434 seconds (JVM running for 9.33)
+2022-02-24 16:41:14.787  INFO 92854 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 267618a4-7ee6-4229-bc58-3cf58d80913b
+
+2022-02-24 16:41:14.797  WARN 92854 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@38af9828] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@2e51ede1]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 16:41:14.861  INFO 92854 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:41:14.862  INFO 92854 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:41:14.867  INFO 92854 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:41:14.869  INFO 92854 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:41:29.167  INFO 92860 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92860 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:41:29.168  INFO 92860 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:41:29.829  INFO 92860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:41:29.876  INFO 92860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:41:30.459  INFO 92860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:41:30.692  INFO 92860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:41:30.753  INFO 92860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:41:30.804  INFO 92860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:41:30.969  INFO 92860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:41:31.099  INFO 92860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:41:31.759  INFO 92860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:41:31.766  INFO 92860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:41:32.222  WARN 92860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:41:35.592  INFO 92860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d5e051e, org.springframework.security.web.context.SecurityContextPersistenceFilter@69c0bae6, org.springframework.security.web.header.HeaderWriterFilter@7c39193f, org.springframework.security.web.csrf.CsrfFilter@102c24d1, org.springframework.security.web.authentication.logout.LogoutFilter@2fc435e9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9976b27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eb041b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c2edbe7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f29e630, org.springframework.security.web.session.SessionManagementFilter@6e225c34, org.springframework.security.web.access.ExceptionTranslationFilter@29fc83c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@587f6634]
+2022-02-24 16:41:36.509  INFO 92860 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 7.821 seconds (JVM running for 8.8)
+2022-02-24 16:41:36.541  INFO 92860 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6c92a97e-5176-4763-9f67-bada55efddb5
+
+2022-02-24 16:41:36.550  WARN 92860 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@38af9828] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@4d745ac6]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 16:41:36.612  INFO 92860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:41:36.612  INFO 92860 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:41:36.617  INFO 92860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:41:36.618  INFO 92860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:43:13.387  INFO 92873 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92873 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:43:13.389  INFO 92873 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:43:14.105  INFO 92873 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:43:14.158  INFO 92873 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:43:14.700  INFO 92873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:43:14.871  INFO 92873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:43:15.003  INFO 92873 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:43:15.047  INFO 92873 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:43:15.196  INFO 92873 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:43:15.313  INFO 92873 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:43:15.775  INFO 92873 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:43:15.782  INFO 92873 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:43:16.111  WARN 92873 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:43:16.381  INFO 92873 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79d4ff58, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e1add6f, org.springframework.security.web.header.HeaderWriterFilter@41143873, org.springframework.security.web.csrf.CsrfFilter@1209a0f, org.springframework.security.web.authentication.logout.LogoutFilter@16b76858, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e753289, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43786627, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74707df8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ec13984, org.springframework.security.web.session.SessionManagementFilter@8bc0696, org.springframework.security.web.access.ExceptionTranslationFilter@50df37eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@184de357]
+2022-02-24 16:43:17.241  INFO 92873 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.349 seconds (JVM running for 5.037)
+2022-02-24 16:43:17.269  INFO 92873 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 05c9d9d6-85ea-4ecf-a574-7ce32c995723
+
+2022-02-24 16:43:17.277  WARN 92873 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@78691363] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@526893f]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 16:43:17.330  INFO 92873 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:43:17.331  INFO 92873 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:43:17.335  INFO 92873 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:43:17.338  INFO 92873 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:45:37.517  INFO 92903 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92903 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:45:37.518  INFO 92903 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:45:38.136  INFO 92903 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:45:38.212  INFO 92903 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:45:38.717  INFO 92903 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:45:38.886  INFO 92903 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:45:38.989  INFO 92903 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:45:39.034  INFO 92903 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:45:39.181  INFO 92903 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:45:39.293  INFO 92903 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:45:39.748  INFO 92903 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:45:39.755  INFO 92903 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:45:40.096  WARN 92903 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:45:40.351  INFO 92903 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17c53dfb, org.springframework.security.web.context.SecurityContextPersistenceFilter@30c01c37, org.springframework.security.web.header.HeaderWriterFilter@714f1a44, org.springframework.security.web.csrf.CsrfFilter@144a5e6e, org.springframework.security.web.authentication.logout.LogoutFilter@467af68c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49c83262, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45bd4753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c11332b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184de357, org.springframework.security.web.session.SessionManagementFilter@592a1882, org.springframework.security.web.access.ExceptionTranslationFilter@5c573229, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cffec7]
+2022-02-24 16:45:41.017  INFO 92903 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 3.887 seconds (JVM running for 4.536)
+2022-02-24 16:45:41.044  INFO 92903 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e4a2533f-75fa-4490-95f7-ad0612041b45
+
+2022-02-24 16:45:41.052  WARN 92903 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@78691363] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@3620eab]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 16:45:41.111  INFO 92903 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:45:41.112  INFO 92903 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:45:41.117  INFO 92903 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:45:41.120  INFO 92903 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:51:27.388  INFO 92937 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92937 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:51:27.390  INFO 92937 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:51:28.116  INFO 92937 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:51:28.170  INFO 92937 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:51:28.677  INFO 92937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:51:28.836  INFO 92937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:51:28.934  INFO 92937 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:51:28.979  INFO 92937 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:51:29.136  INFO 92937 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:51:29.250  INFO 92937 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:51:29.696  INFO 92937 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:51:29.702  INFO 92937 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:51:30.020  WARN 92937 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:51:30.264  INFO 92937 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41d20f06, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d27b4c1, org.springframework.security.web.header.HeaderWriterFilter@23396fc0, org.springframework.security.web.csrf.CsrfFilter@2d913116, org.springframework.security.web.authentication.logout.LogoutFilter@27bb74e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6dcf7b6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b508371, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@473847fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e753289, org.springframework.security.web.session.SessionManagementFilter@7e5e6573, org.springframework.security.web.access.ExceptionTranslationFilter@156cfa20, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49c83262]
+2022-02-24 16:51:30.953  INFO 92937 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.036 seconds (JVM running for 4.72)
+2022-02-24 16:51:31.045  INFO 92937 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 16:51:31.046  INFO 92937 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 16:51:31.047  INFO 92937 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 16:51:31.114  INFO 92937 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:51:31.115  INFO 92937 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:51:31.122  INFO 92937 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:51:31.124  INFO 92937 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 16:52:22.183  INFO 92947 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 92947 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 16:52:22.186  INFO 92947 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 16:52:22.967  INFO 92947 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 16:52:23.018  INFO 92947 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-02-24 16:52:23.757  INFO 92947 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 16:52:23.993  INFO 92947 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 16:52:24.054  INFO 92947 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 16:52:24.106  INFO 92947 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 16:52:24.299  INFO 92947 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 16:52:24.458  INFO 92947 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 16:52:25.136  INFO 92947 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 16:52:25.146  INFO 92947 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:52:25.593  WARN 92947 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 16:52:29.478  INFO 92947 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b4e7b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f89ad03, org.springframework.security.web.header.HeaderWriterFilter@14ba7f15, org.springframework.security.web.csrf.CsrfFilter@1734b1a, org.springframework.security.web.authentication.logout.LogoutFilter@4c3d72fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4745bcc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3879feec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8dcacf1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50008974, org.springframework.security.web.session.SessionManagementFilter@497fd334, org.springframework.security.web.access.ExceptionTranslationFilter@5dd227b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e2b37cd]
+2022-02-24 16:52:30.447  INFO 92947 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 9.063 seconds (JVM running for 10.151)
+2022-02-24 16:52:30.538  INFO 92947 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 16:52:30.538  INFO 92947 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 16:52:30.539  INFO 92947 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2022-02-24 16:56:43.962  WARN 92947 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m19s866ms).
+2022-02-24 16:56:44.910  INFO 92947 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 16:56:44.911  INFO 92947 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 16:56:44.922  INFO 92947 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 16:56:44.927  INFO 92947 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 17:01:03.922  INFO 93022 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 93022 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 17:01:03.924  INFO 93022 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 17:01:05.048  INFO 93022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 17:01:05.179  INFO 93022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 2 JPA repository interfaces.
+2022-02-24 17:01:06.057  INFO 93022 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 17:01:06.242  INFO 93022 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 17:01:06.354  INFO 93022 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 17:01:06.410  INFO 93022 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 17:01:06.582  INFO 93022 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 17:01:06.725  INFO 93022 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 17:01:07.239  INFO 93022 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 17:01:07.245  INFO 93022 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:01:07.601  WARN 93022 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 17:01:07.880  INFO 93022 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@184de357, org.springframework.security.web.context.SecurityContextPersistenceFilter@39a7eca5, org.springframework.security.web.header.HeaderWriterFilter@3c09a350, org.springframework.security.web.csrf.CsrfFilter@2707c790, org.springframework.security.web.authentication.logout.LogoutFilter@43786627, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@273aaab7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@156cfa20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e5e6573, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@efe49ab, org.springframework.security.web.session.SessionManagementFilter@48368a08, org.springframework.security.web.access.ExceptionTranslationFilter@77ecdc2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e81617a]
+2022-02-24 17:01:08.650  INFO 93022 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 5.322 seconds (JVM running for 6.087)
+2022-02-24 17:01:08.678  INFO 93022 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ca504433-c77a-40df-8c94-2a0b124358af
+
+2022-02-24 17:01:08.686  WARN 93022 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@78691363] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@2619cb76]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 17:01:08.741  INFO 93022 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:01:08.741  INFO 93022 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 17:01:08.747  INFO 93022 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 17:01:08.749  INFO 93022 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 17:01:19.062  INFO 93025 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 93025 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 17:01:19.063  INFO 93025 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 17:01:19.719  INFO 93025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 17:01:19.772  INFO 93025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-02-24 17:01:20.358  INFO 93025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 17:01:20.637  INFO 93025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 17:01:20.698  INFO 93025 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 17:01:20.754  INFO 93025 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 17:01:20.999  INFO 93025 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 17:01:21.177  INFO 93025 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 17:01:21.944  INFO 93025 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 17:01:21.956  INFO 93025 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:01:22.471  WARN 93025 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 17:01:26.253  INFO 93025 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2eea4441, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f498f21, org.springframework.security.web.header.HeaderWriterFilter@78f4d15d, org.springframework.security.web.csrf.CsrfFilter@4c3d72fd, org.springframework.security.web.authentication.logout.LogoutFilter@6b32b678, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@677c2820, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50caeb4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1860b107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1820f274, org.springframework.security.web.session.SessionManagementFilter@314c28dc, org.springframework.security.web.access.ExceptionTranslationFilter@3b6c740b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@276aa33f]
+2022-02-24 17:01:27.224  INFO 93025 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 8.694 seconds (JVM running for 9.647)
+2022-02-24 17:01:27.257  INFO 93025 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b9ebea4-ca87-439a-b889-46417f233f3c
+
+2022-02-24 17:01:27.266  WARN 93025 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@38af9828] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@1db5de29]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 17:01:27.327  INFO 93025 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:01:27.327  INFO 93025 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 17:01:27.333  INFO 93025 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 17:01:27.335  INFO 93025 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 17:07:20.129  INFO 93045 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 93045 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 17:07:20.130  INFO 93045 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 17:07:20.783  INFO 93045 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 17:07:20.832  INFO 93045 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2022-02-24 17:07:21.454  INFO 93045 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 17:07:21.687  INFO 93045 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 17:07:21.763  INFO 93045 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 17:07:21.829  INFO 93045 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 17:07:22.143  INFO 93045 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 17:07:22.309  INFO 93045 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 17:07:22.968  INFO 93045 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 17:07:22.975  INFO 93045 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:07:23.448  WARN 93045 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 17:07:32.600  INFO 93045 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cfb7450, org.springframework.security.web.context.SecurityContextPersistenceFilter@182dcd2b, org.springframework.security.web.header.HeaderWriterFilter@182fd26b, org.springframework.security.web.csrf.CsrfFilter@4fbbd98c, org.springframework.security.web.authentication.logout.LogoutFilter@71cc0e35, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ddc8fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@259c6ab8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@446dacf9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@478c84aa, org.springframework.security.web.session.SessionManagementFilter@49c4118b, org.springframework.security.web.access.ExceptionTranslationFilter@750c23a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55202ba6]
+2022-02-24 17:07:33.537  INFO 93045 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 13.86 seconds (JVM running for 14.872)
+2022-02-24 17:07:33.568  INFO 93045 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1e47a6a2-45c4-4a58-9f99-9e1c87ee76b2
+
+2022-02-24 17:07:33.577  WARN 93045 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@38af9828] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@1d4e06bb]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 17:07:33.638  INFO 93045 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:07:33.638  INFO 93045 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 17:07:33.644  INFO 93045 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 17:07:33.646  INFO 93045 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 17:09:05.946  INFO 93060 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 93060 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 17:09:05.947  INFO 93060 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 17:09:06.623  INFO 93060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 17:09:06.674  INFO 93060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-02-24 17:09:07.253  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 17:09:07.489  INFO 93060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 17:09:07.548  INFO 93060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 17:09:07.589  INFO 93060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 17:09:07.745  INFO 93060 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 17:09:07.873  INFO 93060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 17:09:08.525  INFO 93060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 17:09:08.533  INFO 93060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:09:08.971  WARN 93060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 17:09:24.121  INFO 93060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@276aa33f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cdad619, org.springframework.security.web.header.HeaderWriterFilter@581d5b33, org.springframework.security.web.csrf.CsrfFilter@5bf1b528, org.springframework.security.web.authentication.logout.LogoutFilter@5b324447, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5008559a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3909308c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6958d5d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34065642, org.springframework.security.web.session.SessionManagementFilter@44a9971f, org.springframework.security.web.access.ExceptionTranslationFilter@6a562255, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f264bf]
+2022-02-24 17:09:25.080  INFO 93060 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 19.58 seconds (JVM running for 20.489)
+2022-02-24 17:09:25.112  INFO 93060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bf631bc5-4f2d-4525-9698-da3a508eda25
+
+2022-02-24 17:09:25.121  WARN 93060 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@38af9828] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@3f5e64c9]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(setupBefore=TEST_METHOD, userDetailsServiceBeanName=, value=walt)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:73) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: walt
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:150) ~[spring-security-core-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:43) ~[spring-security-test-5.6.1.jar:5.6.1]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$0(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.6.1.jar:5.6.1]
+	... 23 common frames omitted
+
+2022-02-24 17:09:25.184  INFO 93060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 17:09:25.184  INFO 93060 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 17:09:25.189  INFO 93060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 17:09:25.191  INFO 93060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 18:55:17.704  INFO 94738 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 94738 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 18:55:17.705  INFO 94738 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 18:55:18.359  INFO 94738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 18:55:18.417  INFO 94738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2022-02-24 18:55:18.879  INFO 94738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 18:55:19.053  INFO 94738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 18:55:19.151  INFO 94738 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 18:55:19.198  INFO 94738 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 18:55:19.353  INFO 94738 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 18:55:19.473  INFO 94738 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 18:55:19.930  INFO 94738 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 18:55:19.938  INFO 94738 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 18:55:20.384  WARN 94738 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 18:55:20.600  INFO 94738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5086623f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ab8589a, org.springframework.security.web.header.HeaderWriterFilter@e3ed455, org.springframework.security.web.csrf.CsrfFilter@45bd4753, org.springframework.security.web.authentication.logout.LogoutFilter@b5de9ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@782cc5fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@697a92af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30eedaa4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20027c44, org.springframework.security.web.session.SessionManagementFilter@606d6d2c, org.springframework.security.web.access.ExceptionTranslationFilter@46702c26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7433ca19]
+2022-02-24 18:55:21.280  INFO 94738 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.077 seconds (JVM running for 4.902)
+2022-02-24 18:55:21.321  WARN 94738 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28701274] for test method [public void com.manning.readinglist.secure.MockMvcWebTests.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.manning.readinglist.secure.MockMvcWebTests@7853363c]
+
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [data.sql]: insert into Reader (username, password, fullname) values ('craig', '$2a$10$PMnzNRlXbLhMWPlyboM5mO5iBczyR2AKOibvJb24uTb0wSE6P9UmK', 'Craig Walls'); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_8 ON PUBLIC.READER(USERNAME) VALUES 1"; SQL statement:
+insert into Reader (username, password, fullname) values ('craig', '$2a$10$PMnzNRlXbLhMWPlyboM5mO5iBczyR2AKOibvJb24uTb0wSE6P9UmK', 'Craig Walls') [23505-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.15.jar:5.3.15]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.15.jar:5.3.15]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.15.jar:5.3.15]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269) ~[spring-jdbc-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:279) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:279) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$0(SqlScriptsTestExecutionListener.java:201) ~[spring-test-5.3.15.jar:5.3.15]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_261]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:201) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:145) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:118) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:293) ~[spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.15.jar:5.3.15]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.15.jar:5.3.15]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.13.2.jar:4.13.2]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_8 ON PUBLIC.READER(USERNAME) VALUES 1"; SQL statement:
+insert into Reader (username, password, fullname) values ('craig', '$2a$10$PMnzNRlXbLhMWPlyboM5mO5iBczyR2AKOibvJb24uTb0wSE6P9UmK', 'Craig Walls') [23505-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:103) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:221) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:196) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:531) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:195) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.15.jar:5.3.15]
+	... 35 common frames omitted
+
+2022-02-24 18:55:21.380  INFO 94738 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 18:55:21.381  INFO 94738 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 18:55:21.386  INFO 94738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 18:55:21.388  INFO 94738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 19:05:41.957  INFO 94821 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 94821 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 19:05:41.958  INFO 94821 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 19:05:42.490  INFO 94821 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 19:05:42.543  INFO 94821 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2022-02-24 19:05:42.964  INFO 94821 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 19:05:43.115  INFO 94821 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 19:05:43.206  INFO 94821 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 19:05:43.249  INFO 94821 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 19:05:43.397  INFO 94821 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 19:05:43.506  INFO 94821 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 19:05:43.937  INFO 94821 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 19:05:43.944  INFO 94821 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 19:05:44.269  WARN 94821 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 19:05:44.496  INFO 94821 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd3d39d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7956f93a, org.springframework.security.web.header.HeaderWriterFilter@65e620b0, org.springframework.security.web.csrf.CsrfFilter@3c09a350, org.springframework.security.web.authentication.logout.LogoutFilter@5e51ec2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14485747, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27bb74e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ab8589a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ae3c140, org.springframework.security.web.session.SessionManagementFilter@74707df8, org.springframework.security.web.access.ExceptionTranslationFilter@43786627, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41d20f06]
+2022-02-24 19:05:45.172  INFO 94821 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 3.526 seconds (JVM running for 4.147)
+2022-02-24 19:05:45.285  INFO 94821 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 19:05:45.285  INFO 94821 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 19:05:45.286  INFO 94821 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 19:05:45.718  INFO 94821 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 19:05:45.719  INFO 94821 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 19:05:45.723  INFO 94821 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 19:05:45.724  INFO 94821 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 20:06:35.995  INFO 96431 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 96431 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 20:06:35.996  INFO 96431 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 20:06:36.660  INFO 96431 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 20:06:36.730  INFO 96431 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2022-02-24 20:06:37.488  INFO 96431 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 20:06:37.665  INFO 96431 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 20:06:37.767  INFO 96431 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 20:06:37.817  INFO 96431 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 20:06:37.971  INFO 96431 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 20:06:38.109  INFO 96431 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 20:06:38.587  INFO 96431 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 20:06:38.593  INFO 96431 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:06:39.033  WARN 96431 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 20:06:39.377  INFO 96431 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@782cc5fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@46702c26, org.springframework.security.web.header.HeaderWriterFilter@1d6f77d7, org.springframework.security.web.csrf.CsrfFilter@714f1a44, org.springframework.security.web.authentication.logout.LogoutFilter@3d3930fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ec13984, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e3ed455, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d822dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dd3d39d, org.springframework.security.web.session.SessionManagementFilter@74b97416, org.springframework.security.web.access.ExceptionTranslationFilter@467af68c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@395281c2]
+2022-02-24 20:06:40.090  INFO 96431 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.489 seconds (JVM running for 5.194)
+2022-02-24 20:06:40.227  INFO 96431 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 20:06:40.227  INFO 96431 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 20:06:40.228  INFO 96431 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 20:06:40.651  INFO 96431 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:06:40.652  INFO 96431 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 20:06:40.657  INFO 96431 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 20:06:40.659  INFO 96431 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 20:08:58.325  INFO 96455 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 96455 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 20:08:58.326  INFO 96455 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 20:08:58.913  INFO 96455 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 20:08:58.963  INFO 96455 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-02-24 20:08:59.483  INFO 96455 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 20:08:59.738  INFO 96455 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 20:08:59.797  INFO 96455 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 20:08:59.846  INFO 96455 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 20:09:00.012  INFO 96455 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 20:09:00.144  INFO 96455 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 20:09:00.839  INFO 96455 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 20:09:00.849  INFO 96455 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:09:01.357  WARN 96455 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 20:09:07.857  INFO 96455 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@642614b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e43b342, org.springframework.security.web.header.HeaderWriterFilter@1afa048a, org.springframework.security.web.csrf.CsrfFilter@19f1f330, org.springframework.security.web.authentication.logout.LogoutFilter@2634d000, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57fc6759, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dbcf7c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36931450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@345540f9, org.springframework.security.web.session.SessionManagementFilter@70eb94d7, org.springframework.security.web.access.ExceptionTranslationFilter@a1a72d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f36e806]
+2022-02-24 20:09:08.823  INFO 96455 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 11.047 seconds (JVM running for 12.023)
+2022-02-24 20:09:18.478  INFO 96455 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 20:09:18.479  INFO 96455 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 20:09:18.480  INFO 96455 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 20:09:46.626  WARN 96455 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s784ms).
+2022-02-24 20:11:24.838  WARN 96455 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s212ms).
+2022-02-24 20:12:37.498  WARN 96455 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s660ms).
+2022-02-24 20:12:37.523  INFO 96455 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:12:37.523  INFO 96455 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 20:12:37.529  INFO 96455 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 20:12:37.532  INFO 96455 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 20:16:06.248  INFO 96500 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 96500 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 20:16:06.251  INFO 96500 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 20:16:06.899  INFO 96500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 20:16:06.954  INFO 96500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2022-02-24 20:16:07.499  INFO 96500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 20:16:07.673  INFO 96500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 20:16:07.774  INFO 96500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 20:16:07.819  INFO 96500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 20:16:07.975  INFO 96500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 20:16:08.098  INFO 96500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 20:16:08.548  INFO 96500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 20:16:08.554  INFO 96500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:16:08.899  WARN 96500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 20:16:09.186  INFO 96500 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@782cc5fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@46702c26, org.springframework.security.web.header.HeaderWriterFilter@1d6f77d7, org.springframework.security.web.csrf.CsrfFilter@714f1a44, org.springframework.security.web.authentication.logout.LogoutFilter@3d3930fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ec13984, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e3ed455, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d822dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dd3d39d, org.springframework.security.web.session.SessionManagementFilter@74b97416, org.springframework.security.web.access.ExceptionTranslationFilter@467af68c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@395281c2]
+2022-02-24 20:16:09.930  INFO 96500 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 4.207 seconds (JVM running for 4.916)
+2022-02-24 20:16:10.063  INFO 96500 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 20:16:10.063  INFO 96500 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 20:16:10.064  INFO 96500 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 20:16:10.549  INFO 96500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:16:10.550  INFO 96500 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 20:16:10.557  INFO 96500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 20:16:10.559  INFO 96500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-24 20:17:12.136  INFO 96510 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Starting MockMvcWebTests using Java 1.8.0_261 on liyang19 with PID 96510 (started by liyang in /Users/liyang/devspace/java/damon/readinglist)
+2022-02-24 20:17:12.137  INFO 96510 --- [main] c.m.readinglist.secure.MockMvcWebTests   : The following profiles are active: production
+2022-02-24 20:17:12.979  INFO 96510 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-24 20:17:13.043  INFO 96510 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2022-02-24 20:17:13.766  INFO 96510 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 20:17:14.067  INFO 96510 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-24 20:17:14.127  INFO 96510 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-24 20:17:14.178  INFO 96510 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-24 20:17:14.377  INFO 96510 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-24 20:17:14.540  INFO 96510 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-24 20:17:15.280  INFO 96510 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-24 20:17:15.287  INFO 96510 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:17:15.727  WARN 96510 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-24 20:17:19.678  INFO 96510 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35f35c59, org.springframework.security.web.context.SecurityContextPersistenceFilter@544e6b, org.springframework.security.web.header.HeaderWriterFilter@1adf387e, org.springframework.security.web.csrf.CsrfFilter@c7c07ff, org.springframework.security.web.authentication.logout.LogoutFilter@7d07e04e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@319d106c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65a66a75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a1a72d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2245ccaa, org.springframework.security.web.session.SessionManagementFilter@1be4a7e3, org.springframework.security.web.access.ExceptionTranslationFilter@34d5eac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d202dc4]
+2022-02-24 20:17:20.625  INFO 96510 --- [main] c.m.readinglist.secure.MockMvcWebTests   : Started MockMvcWebTests in 9.004 seconds (JVM running for 10.034)
+2022-02-24 20:17:34.795  INFO 96510 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-02-24 20:17:34.796  INFO 96510 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-02-24 20:17:34.797  INFO 96510 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-02-24 20:18:12.401  WARN 96510 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s232ms).
+2022-02-24 20:19:04.863  WARN 96510 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s462ms).
+2022-02-24 20:19:14.944  INFO 96510 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-24 20:19:14.946  INFO 96510 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-24 20:19:14.955  INFO 96510 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-24 20:19:14.957  INFO 96510 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

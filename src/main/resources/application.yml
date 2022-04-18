@@ -1,12 +1,12 @@
 spring:
   application:
     name: readinglist
-#  boot:
-#    admin:
-#      client:
-#        url: http://localhost:9091
-#  profiles:
-#    active: development
+  #  boot:
+  #    admin:
+  #      client:
+  #        url: http://localhost:9091
+  #  profiles:
+  #    active: development
   jpa:
     defer-datasource-initialization: true
   thymeleaf:

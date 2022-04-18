@@ -31,60 +31,60 @@ import org.springframework.web.context.WebApplicationContext;
 @WebAppConfiguration
 public class MockMvcWebTests {
 
-  @Autowired
-  WebApplicationContext webContext;
+    @Autowired
+    WebApplicationContext webContext;
 
-  private MockMvc mockMvc;
+    private MockMvc mockMvc;
 
-  @Before
-  public void setupMockMvc() {
-    mockMvc = MockMvcBuilders
-        .webAppContextSetup(webContext)
-        .build();
-  }
-  
-//  @Test
-  public void redirectFromRoot() throws Exception {
-    mockMvc.perform(get("/"))
-        .andExpect(status().is3xxRedirection())
-        .andExpect(header().string("Location", "/readingList"));
-  }
+    @Before
+    public void setupMockMvc() {
+        mockMvc = MockMvcBuilders
+                .webAppContextSetup(webContext)
+                .build();
+    }
 
-//  @Test
-  public void homePage() throws Exception {
-    mockMvc.perform(get("/?username=liyang"))
-        .andExpect(status().isOk())
-        .andExpect(view().name("readingList"))
-        .andExpect(model().attributeExists("books"))
-        .andExpect(model().attribute("books", is(empty())));
-  }
-  
-  @Test
-  public void postBook() throws Exception {
-    mockMvc.perform(post("/?username=liyang")
-           .contentType(APPLICATION_FORM_URLENCODED)
-           .param("title", "BOOK TITLE")
-           .param("author", "BOOK AUTHOR")
-           .param("isbn", "1234567890")
-           .param("description", "DESCRIPTION"))
-           .andExpect(status().is3xxRedirection())
-           .andExpect(header().string("Location", "/?username=liyang"));
-    
-    Book expectedBook = new Book();
-    expectedBook.setId(1L);
-    expectedBook.setReader("liyang");
-    expectedBook.setTitle("BOOK TITLE");
-    expectedBook.setAuthor("BOOK AUTHOR");
-    expectedBook.setIsbn("1234567890");
-    expectedBook.setDescription("DESCRIPTION");
-    
-    mockMvc.perform(get("/?username=liyang"))
-           .andExpect(status().isOk())
-           .andExpect(view().name("readingList"))
-           .andExpect(model().attributeExists("books"))
-           .andExpect(model().attribute("books", hasSize(1)))
-           .andExpect(model().attribute("books", 
+    //  @Test
+    public void redirectFromRoot() throws Exception {
+        mockMvc.perform(get("/"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(header().string("Location", "/readingList"));
+    }
+
+    //  @Test
+    public void homePage() throws Exception {
+        mockMvc.perform(get("/?username=liyang"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("readingList"))
+                .andExpect(model().attributeExists("books"))
+                .andExpect(model().attribute("books", is(empty())));
+    }
+
+    @Test
+    public void postBook() throws Exception {
+        mockMvc.perform(post("/?username=liyang")
+                .contentType(APPLICATION_FORM_URLENCODED)
+                .param("title", "BOOK TITLE")
+                .param("author", "BOOK AUTHOR")
+                .param("isbn", "1234567890")
+                .param("description", "DESCRIPTION"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(header().string("Location", "/?username=liyang"));
+
+        Book expectedBook = new Book();
+        expectedBook.setId(1L);
+        expectedBook.setReader("liyang");
+        expectedBook.setTitle("BOOK TITLE");
+        expectedBook.setAuthor("BOOK AUTHOR");
+        expectedBook.setIsbn("1234567890");
+        expectedBook.setDescription("DESCRIPTION");
+
+        mockMvc.perform(get("/?username=liyang"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("readingList"))
+                .andExpect(model().attributeExists("books"))
+                .andExpect(model().attribute("books", hasSize(1)))
+                .andExpect(model().attribute("books",
                         contains(samePropertyValuesAs(expectedBook))));
-  }
+    }
 
 }

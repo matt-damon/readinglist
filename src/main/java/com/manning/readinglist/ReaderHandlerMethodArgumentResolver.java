@@ -13,20 +13,20 @@ import java.util.Map;
 @Component
 public class ReaderHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
-  @Override
-  public boolean supportsParameter(MethodParameter parameter) {
-    boolean res = Reader.class.isAssignableFrom(parameter.getParameterType());
-    return res;
-  }
+    @Override
+    public boolean supportsParameter(MethodParameter parameter) {
+        boolean res = Reader.class.isAssignableFrom(parameter.getParameterType());
+        return res;
+    }
 
-  @Override
-  public Object resolveArgument(MethodParameter parameter,
-      ModelAndViewContainer mavContainer, NativeWebRequest webRequest,
-      WebDataBinderFactory binderFactory) throws Exception {
+    @Override
+    public Object resolveArgument(MethodParameter parameter,
+                                  ModelAndViewContainer mavContainer, NativeWebRequest webRequest,
+                                  WebDataBinderFactory binderFactory) throws Exception {
 
-      Authentication auth = (Authentication) webRequest.getUserPrincipal();//通过认证后，连带fullname，password都带给controller
-      Object res = auth != null && auth.getPrincipal() instanceof Reader ? auth.getPrincipal() : null;
-      return res;
-  }
+        Authentication auth = (Authentication) webRequest.getUserPrincipal();//通过认证后，连带fullname，password都带给controller
+        Object res = auth != null && auth.getPrincipal() instanceof Reader ? auth.getPrincipal() : null;
+        return res;
+    }
 
 }

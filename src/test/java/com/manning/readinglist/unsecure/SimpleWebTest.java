@@ -16,31 +16,31 @@ import org.springframework.web.client.RestTemplate;
 
 //启动嵌入式的servlet容器运行应用程序，之后可以发起真实的HTTP请求
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes= ReadingListApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = ReadingListApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SimpleWebTest {
 
-  @Value("${local.server.port}")
-  private int port;
+    @Value("${local.server.port}")
+    private int port;
 
-  @Test(expected=HttpClientErrorException.class)
-  public void pageNotFound() {
-    try {
-      RestTemplate rest = new RestTemplate();
-      String forObject = rest.getForObject("http://localhost:{port}/?username=liyang", String.class, port);
-      System.out.println(forObject);
+    @Test(expected = HttpClientErrorException.class)
+    public void pageNotFound() {
+        try {
+            RestTemplate rest = new RestTemplate();
+            String forObject = rest.getForObject("http://localhost:{port}/?username=liyang", String.class, port);
+            System.out.println(forObject);
 //      fail("Should result in HTTP 404");
-    } catch (HttpClientErrorException e) {
-      assertEquals(HttpStatus.NOT_FOUND, e.getStatusCode());
-      throw e;
+        } catch (HttpClientErrorException e) {
+            assertEquals(HttpStatus.NOT_FOUND, e.getStatusCode());
+            throw e;
+        }
     }
-  }
-  
-//  @Test
-  public void testRestTemplate() throws Exception {
-    TestRestTemplate rest = new TestRestTemplate();
-    String s = rest.getForObject("http://localhost:{port}/bogusPage", String.class, port);
-    System.out.println(s);
-    
-  }
-  
+
+    //  @Test
+    public void testRestTemplate() throws Exception {
+        TestRestTemplate rest = new TestRestTemplate();
+        String s = rest.getForObject("http://localhost:{port}/bogusPage", String.class, port);
+        System.out.println(s);
+
+    }
+
 }
